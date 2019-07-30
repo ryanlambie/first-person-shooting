@@ -33,7 +33,7 @@ def on_mouse_down(pos,button):
     if button == mouse.LEFT and numberofbullets > 0:
         # check whether an enemy has been hit
         for e in enemies:
-            if crosshair.colliderect(e) and e.hit == False:
+            if crosshair.colliderect(e):
                 # if hit, add position to 'hits' list
                 e.hits.append(newHit(pos))
                 e.hit = True
