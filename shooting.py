@@ -13,7 +13,7 @@ def newEnemy(pos):
 
 # creating a bullet that has hit an enemy
 def newHit(pos):
-    h = Actor('bullet_hit', pos=pos)
+    h = Actor('bullet', pos=pos)
     return h
 
 # create 3 enemies at various positions
